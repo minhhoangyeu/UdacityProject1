@@ -6,15 +6,15 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'devstoreaccount1'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw=='
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'hoangnm22'
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'b51EefivnPC3e4haGRazEPl5L/l/F2PgmdfEqbqj1fsBCFU9TR+qK2px7Ew7u0jSuw8hggrSwFOE+AStub/SkQ=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
-    BLOB_URL=os.environ.get('BLOB_URL') or 'AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;QueueEndpoint=http://127.0.0.1:10001/devstoreaccount1;TableEndpoint=http://127.0.0.1:10002/devstoreaccount1;'
+    BLOB_URL=os.environ.get('BLOB_URL') or 'DefaultEndpointsProtocol=https;AccountName=hoangnm22;AccountKey=b51EefivnPC3e4haGRazEPl5L/l/F2PgmdfEqbqj1fsBCFU9TR+qK2px7Ew7u0jSuw8hggrSwFOE+AStub/SkQ==;EndpointSuffix=core.windows.net'
     
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'DESKTOP-50JRP90'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'UdacityPost'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'sa'
-    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Minhhoang1#'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'hoangnm22project1.database.windows.net'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'CMSProject1'
+    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'hoangnm22'
+    SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Minhhoang123#'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     
     #SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
