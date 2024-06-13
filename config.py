@@ -7,9 +7,9 @@ class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'hoangnm22'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'b51EefivnPC3e4haGRazEPl5L/l/F2PgmdfEqbqj1fsBCFU9TR+qK2px7Ew7u0jSuw8hggrSwFOE+AStub/SkQ=='
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'fjdNQg/dG8QyGU9NR2MrTtXDJtoeVR95AfklagmiKYtZte9B3Qi2dmZFFGJ6MIiuvDrsYd4Y58K++ASt9GP/Dw=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
-    BLOB_URL=os.environ.get('BLOB_URL') or 'DefaultEndpointsProtocol=https;AccountName=hoangnm22;AccountKey=b51EefivnPC3e4haGRazEPl5L/l/F2PgmdfEqbqj1fsBCFU9TR+qK2px7Ew7u0jSuw8hggrSwFOE+AStub/SkQ==;EndpointSuffix=core.windows.net'
+    BLOB_URL=os.environ.get('BLOB_URL') or 'DefaultEndpointsProtocol=https;AccountName=hoangnm22;AccountKey=fjdNQg/dG8QyGU9NR2MrTtXDJtoeVR95AfklagmiKYtZte9B3Qi2dmZFFGJ6MIiuvDrsYd4Y58K++ASt9GP/Dw==;EndpointSuffix=core.windows.net'
     
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'hoangnm22project1.database.windows.net'
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'CMSProject1'
