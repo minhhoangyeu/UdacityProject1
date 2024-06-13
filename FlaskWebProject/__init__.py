@@ -11,6 +11,7 @@ from flask.logging import create_logger
 
 app = Flask(__name__)
 app.config.from_object(Config)
+# TODO:
 logger = create_logger(app)
 logger.setLevel(logging.INFO)
 streamHandler = logging.StreamHandler()
