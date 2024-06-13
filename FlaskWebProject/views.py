@@ -1,7 +1,7 @@
 """
 Routes and views for the flask application.
 """
-import logging as logger
+from FlaskWebProject import logger
 from datetime import datetime
 from flask import render_template, flash, redirect, request, session, url_for
 from urllib.parse import urlparse as url_parse
