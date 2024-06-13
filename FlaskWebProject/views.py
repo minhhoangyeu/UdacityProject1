@@ -66,6 +66,7 @@ def post(id):
 def login():
     if current_user.is_authenticated:
         #Log get user login info
+        logger.info("Login success !")
         logger.info('Login  user info: ' + str(current_user.id))
         return redirect(url_for('home'))
     form = LoginForm()
