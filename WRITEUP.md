@@ -23,5 +23,6 @@ Body: "This is my first article!"
 
 *Detail how the app and any other needs would have to change for you to change your decision in the last section.* 
 
-I would choose Virtual Machines If application requirements change such that more control over the infrastructure is needed, this will influence the decision to move from Azure App Services to Azure Virtual Machines. Specific scenarios may include the need to run legacy software, deploy specialized network configurations, or access low-level system settings that Azure App Service does not support. Azure VM provides the flexibility and control needed for these scenarios.
-With my current project, I don't see this changing in the near future if my project doesn't develop more features or develop more for complex business.
+I would choose Virtual Machines if my project has complex dependencies or requires tool or application configuration that is resource-intensive and requires complex network configuration for specific security beyond features Managed security provided by Azure App Service.
+
+But the current application service is more suitable for my project than Virtual Machine. Using Virtual Machines takes a lot of planning and work to keep them secure and up to date, so I don't see this changing in the near future if my projects don't grow larger and more complex.
